@@ -7,5 +7,7 @@ public class Tulip extends Flower {
         this.setSepalLength(sepalLength);
         this.setFlowerType(FlowerType.TULIP);
     }
-    
+    public Tulip() {
+        super();
+    }
 }

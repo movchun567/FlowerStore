@@ -7,5 +7,7 @@ public class Chamomile extends Flower {
         this.setSepalLength(sepalLength);
         this.setFlowerType(FlowerType.CHAMOMILE);
     }
-    
+    public Chamomile() {
+        super();
+    }
 }

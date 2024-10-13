@@ -6,5 +6,9 @@ public class Rose extends Flower {
         this.setSepalLength(sepalLength);
         this.setFlowerType(FlowerType.ROSE);
     }
+
+    public Rose() {
+        super();
+    }
     
 }
