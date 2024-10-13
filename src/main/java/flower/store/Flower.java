@@ -1,19 +1,33 @@
 package flower.store;
 
-import lombok.Getter;
-import lombok.Setter;
-
-
-
-@Setter
 public class Flower {
-    @Getter
     private double sepalLength;
     private FlowerColor color;
-    @Getter
     private double price;
-    @Getter
     private FlowerType flowerType;
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public void setColor(FlowerColor color) {
+        this.color = color;
+    }
+    public void setFlowerType(FlowerType flowerType) {
+        this.flowerType = flowerType;
+    }
+    public void setSepalLength(double sepalLength) {
+        this.sepalLength = sepalLength;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+    public double getSepalLength() {
+        return sepalLength;
+    }
+    public String getFlowerType() {
+        return flowerType.toString();
+    }
 
     public String getColor() {
         return color.toString();
